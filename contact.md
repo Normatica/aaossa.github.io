@@ -6,6 +6,12 @@ permalink: /contacto/
 
 Hola, mi nombre es **Antonio Ossa Guerra**. Soy alumno de Ingeniería en la Pontificia Universidad Católica de Chile, buscando articular con el título profesional en **Ingeniería Civil de Industrias, con diploma en Ingeniería de Computación**.
 
+<br>
+<div align="center">
+	<img src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460" style="width: 30%; height: 30%; border-radius: 50%">
+</div>
+<br>
+
 Durante mi paso por la universidad he participado en distintas actividades de investigación, junto a profesores del *Departamento de Ingeniería Industrial y Sistemas* y del *Departamento de Ciencia de la Computación*. Además, he sido ayudante de los siguientes ramos:
 
 * **MAT1630 Cálculo III** Laboratorio (2015-1)
@@ -14,4 +20,6 @@ Durante mi paso por la universidad he participado en distintas actividades de in
 
 Además, durante el primer semestre de 2016, seré **Jefe del área de Docencia en Programación Avanzada**.
 
-Para contactarme, puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl)
+<br>
+
+Para contactarme, puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl).
