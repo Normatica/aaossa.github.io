@@ -21,5 +21,6 @@ github_username:  jekyll
 encoding: utf-8
 highlighter: pygments
 markdown: kramdown
+permalink: /blog/:title
 port: 5000
 timezone: America/Santiago
