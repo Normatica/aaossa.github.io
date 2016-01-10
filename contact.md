@@ -4,22 +4,17 @@ title: Contacto
 permalink: /contacto/
 ---
 
-Hola, mi nombre es **Antonio Ossa Guerra**. Soy alumno de Ingeniería en la Pontificia Universidad Católica de Chile, buscando articular con el título profesional en **Ingeniería Civil de Industrias, con diploma en Ingeniería de Computación**.
+# Vías de comunicación
 
-<br>
-<div align="center">
-	<img src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460" style="width: 30%; height: 30%; border-radius: 50%">
-</div>
-<br>
+<ul style="list-style-type:none">
+	<li><a href="https://telegram.me/aaossa"><strong>Telegram</strong></a></li>
+	<li><a href="https://www.facebook.com/TONINOaog"><strong>Facebook</strong></a></li>
+	<li><a href="mailto:aaossa@uc.cl"><strong>Email</strong></a></li>
+</ul>
 
-Durante mi paso por la universidad he participado en distintas actividades de investigación, junto a profesores del *Departamento de Ingeniería Industrial y Sistemas* y del *Departamento de Ciencia de la Computación*. Además, he sido ayudante de los siguientes ramos:
+# Links importantes
 
-* **MAT1630 Cálculo III** Laboratorio (2015-1)
-* **IIC1103 Introducción a la Programación** Laboratorio, corrección y cátedra (2014 y 2015-1)
-* **IIC2233 Programación Avanzada** Corrección y cátedra (2015 y 2016-1)
-
-Además, durante el primer semestre de 2016, seré **Jefe del área de Docencia en Programación Avanzada**.
-
-<br>
-
-Para contactarme, puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl).
+<ul style="list-style-type:none">
+  <li><a href="https://github.com/aaossa"><strong>GitHub</strong></a></li>
+  <li><a href="https://www.linkedin.com/in/aaossa"><strong>LinkedIn</strong></a></li>
+</ul>
