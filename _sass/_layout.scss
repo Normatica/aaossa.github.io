@@ -105,7 +105,10 @@
   content: "";
   width: 100px;
   height: 1px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   background-color: #555;
 }
 
@@ -181,7 +184,10 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding-top: $spacing-unit;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .page-heading {
@@ -227,7 +233,7 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 0;
 
     h2 {
         font-size: 32px;
@@ -253,3 +259,20 @@
         }
     }
 }
+
+
+/* 
+Disqus comments 
+*/
+.disqus-comments:before {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 1px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  background-color: #555;
+}
+
