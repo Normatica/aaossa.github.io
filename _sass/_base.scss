@@ -6,6 +6,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    color: #555;
 }
 
 
@@ -161,6 +162,8 @@ pre {
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
 
@@ -172,6 +175,10 @@ pre {
     }
 }
 
+.wrapper-footer {    
+    padding-top: $spacing-unit;
+    padding-bottom: 0;
+}
 
 
 /**
