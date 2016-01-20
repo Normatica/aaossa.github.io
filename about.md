@@ -22,4 +22,4 @@ Además, durante el primer semestre de 2016, seré **Jefe del área de Docencia 
 
 <br>
 
-Para conocer las formas de contactarme puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl). Otras formas de contacto están disponibles en [esta sección de la página](/contacto/).
+Para contactarme puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl). Otras formas de contacto están disponibles en [esta sección de la página](/contacto/).
