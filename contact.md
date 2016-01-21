@@ -8,7 +8,7 @@ permalink: /contacto/
 
 <ul style="list-style-type:none">
 	<li><a href="https://telegram.me/aaossa"><strong>Telegram</strong></a></li>
-	<li><a href="https://www.facebook.com/TONINOaog"><strong>Facebook</strong></a></li>
+	<li><a href="https://www.facebook.com/aaossa"><strong>Facebook</strong></a></li>
 	<li><a href="mailto:aaossa@uc.cl"><strong>Email</strong></a></li>
 </ul>
 
