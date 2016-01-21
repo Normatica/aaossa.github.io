@@ -18,7 +18,7 @@ Durante mi paso por la universidad he participado en distintas actividades de in
 * **IIC1103 Introducción a la Programación** Laboratorio, corrección y cátedra (2014 y 2015-1)
 * **IIC2233 Programación Avanzada** Corrección y cátedra (2015 y 2016-1)
 
-Además, durante el primer semestre de 2016, seré **Jefe del área de Docencia en Programación Avanzada**.
+También, durante el primer semestre de 2016, seré **Jefe del área de Docencia en Programación Avanzada**.
 
 <br>
 
