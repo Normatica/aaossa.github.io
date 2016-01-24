@@ -1,4 +1,4 @@
-function toggle(a) {
+function contact_toggle(a) {
 	if (a.tagName !== 'A') { var a = a.parentElement; }
 	var i = a.getElementsByTagName("i")[0];
 	var className = i.getAttribute("class");
@@ -14,14 +14,14 @@ addLoadEvent(function() {
 	var ids = ["lista_1", "lista_2"];
 	for (var _id = 0; _id < ids.length; _id++) {
 		var lista = document.getElementById(ids[_id]).getElementsByTagName("li");
-		console.log(lista.length);
+		console.log("Contact (" + _id + "): " + lista.length);
 		for (var i = 0; i < lista.length; i++) {
 			var li = lista[i];
 			li.className = "contact_list_item";
 			var a = li.getElementsByTagName("a")[0];
 			a.className = "contact_hyperlink";
-			a.addEventListener('mouseover', function(event) { toggle(event.target || event.srcElement); });
-			a.addEventListener('mouseout', function(event) { toggle(event.target || event.srcElement); });
+			a.addEventListener('mouseover', function(event) { contact_toggle(event.target || event.srcElement); });
+			a.addEventListener('mouseout', function(event) { contact_toggle(event.target || event.srcElement); });
 			var ic = a.getElementsByTagName("i")[0];
 			ic.className = ic.className + " contact_icon";
 		}
