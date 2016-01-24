@@ -184,6 +184,36 @@ pre {
     padding-bottom: 0;
 }
 
+/* 
+* Footer icons
+*/
+.footer-social {
+    padding-bottom: 20px;
+    position: relative;
+}
+.footer-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;;
+    font-size: 25px;
+    top: auto; right: 0; bottom: 0; left: 0;
+    position: absolute;
+}
+.footer-social ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.animated_footer_icon {
+    animation: rotate_and_scale 1s infinite ease-in-out;
+}
+@keyframes rotate_and_scale {
+    0% { transform: rotate(0deg); font-size: 25px; }
+    50% { transform: rotate(360deg); font-size: 35px; }
+    90% { transform: rotate(360deg); font-size: 35px; }
+    100% { transform: rotate(360deg); font-size: 25px; }
+}
+
 
 /**
  * Clearfix

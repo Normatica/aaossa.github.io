@@ -16,3 +16,5 @@ Estos son algunos de los proyectos en los que actualmente me encuentro trabajand
 
 * [**Computer Security Algorithms:**](https://github.com/aaossa/Computer-Security-Algorithms)
 Problemas relacionados con seguridad computacional. Algoritmos escritos en Python. Ver mas: https://id0-rsa.pub/. [Ir a GitHub](https://github.com/aaossa/Computer-Security-Algorithms).
+
+* [**aaossa.github.io:**](https://github.com/aaossa/aaossa.github.io) My personal webpage https://aaossa.github.io/. [Ir a GitHub](https://github.com/aaossa/aaossa.github.io).

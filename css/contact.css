@@ -21,10 +21,10 @@
 }
 
 .animated_contact_icon {
-	animation: rotate_and_scale 1s infinite ease-in-out;
+	animation: rotate_and_scale_contact 1s infinite ease-in-out;
 }
 
-@keyframes rotate_and_scale {
+@keyframes rotate_and_scale_contact {
 	0% { transform: rotate(0deg); font-size: 14px; }
 	50% { transform: rotate(360deg); font-size: 24px; }
 	90% { transform: rotate(360deg); font-size: 24px; }
