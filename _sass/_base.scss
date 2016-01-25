@@ -1,36 +1,31 @@
-/**
- * Reset some basic elements
+/*
+ * Default setup from Jekyll
  */
+
+// Reset some basic elements
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
+    color: $text-color;
     margin: 0;
     padding: 0;
-    color: #555;
 }
 
 
-
-/**
- * Basic styling
- */
+// Basic styling
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
     background-color: $background-color;
+    color: $text-color;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;    
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+// Set `margin-bottom` to maintain vertical rhythm
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -38,21 +33,13 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
-/**
- * Images
- */
+// Images
 img {
     max-width: 100%;
     vertical-align: middle;
 }
 
-
-
-/**
- * Figures
- */
+// Figures
 figure > img {
     display: block;
 }
@@ -61,36 +48,23 @@ figcaption {
     font-size: $small-font-size;
 }
 
-
-
-/**
- * Lists
- */
+// Lists
 ul, ol {
     margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
+    > ul, > ol {
+        margin-bottom: 0;
     }
 }
 
-
-
-/**
- * Headings
- */
+// Headings
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
-
-
-/**
- * Links
- */
+// Links
 a {
     color: $brand-color;
     text-decoration: none;
@@ -105,35 +79,26 @@ a {
     }
 }
 
-
-
-/**
- * Blockquotes
- */
+// Blockquotes
 blockquote {
-    color: $grey-color;
     border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    color: $grey-color;
     font-size: 18px;
-    letter-spacing: -1px;
     font-style: italic;
+    letter-spacing: -1px;    
+    padding-left: $spacing-unit / 2;
 
     > :last-child {
         margin-bottom: 0;
     }
 }
 
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
+// Code formatting
+pre, code {
+    background-color: #eef;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    font-size: 15px;
 }
 
 code {
@@ -151,20 +116,12 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
+// Wrapper
 .wrapper {
+    margin: 0 auto;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding: $spacing-unit;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -174,39 +131,32 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-
 .wrapper-footer {    
     padding-top: $spacing-unit;
     padding-bottom: 0;
 }
-
 .wrapper-content {
     padding-bottom: 0;
 }
 
 /* 
-* Footer bottom 
-*/
+ * Footer
+ */
 .footer-bottom {
     padding-top: 20px;
 }
-
-
-/* 
-* Footer icons
-*/
 .footer-social {
     padding-bottom: 20px;
     position: relative;
 }
 .footer-social ul {
+    font-size: 25px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
-    font-size: 25px;
-    top: auto; right: 0; bottom: 0; left: 0;
     position: absolute;
+    text-align: center;
+    top: auto; right: 0; bottom: 0; left: 0;    
 }
 .footer-social ul li {
     display: inline-block;
@@ -222,32 +172,21 @@ pre {
     100% { transform: rotate(360deg); font-size: 25px; }
 }
 
-
-/**
- * Clearfix
- */
+// Clearfix
 %clearfix {
-
     &:after {
-        content: "";
-        display: table;
         clear: both;
+        content: "";
+        display: table;        
     }
 }
 
-
-
-/**
- * Icons
- */
+// Icons
 .icon {
-
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        height: 16px; width: 16px;        
         vertical-align: middle;
-
         path {
             fill: $grey-color;
         }
