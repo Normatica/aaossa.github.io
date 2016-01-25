@@ -139,6 +139,27 @@ pre {
     padding-bottom: 0;
 }
 
+// Clearfix
+%clearfix {
+    &:after {
+        clear: both;
+        content: "";
+        display: table;        
+    }
+}
+
+// Icons
+.icon {
+    > svg {
+        display: inline-block;
+        height: 16px; width: 16px;        
+        vertical-align: middle;
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
 /* 
  * Footer
  */
@@ -171,24 +192,12 @@ pre {
     90% { transform: rotate(360deg); font-size: 35px; }
     100% { transform: rotate(360deg); font-size: 25px; }
 }
-
-// Clearfix
-%clearfix {
-    &:after {
-        clear: both;
-        content: "";
-        display: table;        
-    }
+.footer-list {
+    list-style: none;
+    margin-left: 0;
+    text-align: center;
 }
-
-// Icons
-.icon {
-    > svg {
-        display: inline-block;
-        height: 16px; width: 16px;        
-        vertical-align: middle;
-        path {
-            fill: $grey-color;
-        }
-    }
+.footer-list p {
+    color: #828282;
+    margin: 0 auto;
 }
