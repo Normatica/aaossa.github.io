@@ -14,7 +14,6 @@ addLoadEvent(function() {
 	var ids = ["lista_1", "lista_2"];
 	for (var _id = 0; _id < ids.length; _id++) {
 		var lista = document.getElementById(ids[_id]).getElementsByTagName("li");
-		console.log("Contact (" + _id + "): " + lista.length);
 		for (var i = 0; i < lista.length; i++) {
 			var li = lista[i];
 			li.className = "contact_list_item";
