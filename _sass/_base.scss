@@ -183,15 +183,6 @@ pre {
     display: inline-block;
     padding: 0 20px;
 }
-.animated_footer_icon {
-    animation: rotate_and_scale_footer 1s infinite ease-in-out;
-}
-@keyframes rotate_and_scale_footer {
-    0% { transform: rotate(0deg); font-size: 25px; }
-    50% { transform: rotate(360deg); font-size: 35px; }
-    90% { transform: rotate(360deg); font-size: 35px; }
-    100% { transform: rotate(360deg); font-size: 25px; }
-}
 .footer-list {
     list-style: none;
     margin-left: 0;
@@ -200,4 +191,35 @@ pre {
 .footer-list p {
     color: #828282;
     margin: 0 auto;
+}
+
+/* 
+ * Social icons
+ */
+ .social-icons {
+    list-style-type: none;
+ }
+ .social-icons a:hover {
+    text-decoration: none;
+ }
+ .social-icons a:hover > i {
+    animation: contact-growing 1s infinite ease-in-out;
+}
+
+.footer-social .social-icons i:hover {
+    animation: footer-growing 1s infinite ease-in-out;
+}
+
+@keyframes contact-growing {
+    0% { transform: rotate(0deg); font-size: 16px; text-shadow: 0px 0px 0px #999999; }
+    50% { transform: rotate(360deg); font-size: 20px; text-shadow: 3px 3px 3px #999999; }
+    90% { transform: rotate(360deg); font-size: 20px; text-shadow: 3px 3px 3px #999999; }
+    100% { transform: rotate(360deg); font-size: 16px; text-shadow: 0px 0px 0px #999999; }
+}
+
+@keyframes footer-growing {
+    0% { transform: rotate(0deg); font-size: 25px; text-shadow: 0px 0px 0px #999999; }
+    50% { transform: rotate(360deg); font-size: 30px; text-shadow: 3px 3px 3px #999999; }
+    90% { transform: rotate(360deg); font-size: 30px; text-shadow: 3px 3px 3px #999999; }
+    100% { transform: rotate(360deg); font-size: 25px; text-shadow: 0px 0px 0px #999999; }
 }
