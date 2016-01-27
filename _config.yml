@@ -5,8 +5,7 @@ title: Antonio Ossa
 email: aaossa@uc.cl
 description: > # this means to ignore newlines until next setting
   Página web personal de Antonio Ossa Guerra
-twitter_username: aaossa
-github_username:  aaossa
+username: aaossa
 
 # Build settings
 highlighter: pygments
