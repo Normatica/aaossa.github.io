@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until next setting
 username: aaossa
 
 # Build settings
-highlighter: pygments
+highlighter: rogue
 markdown: kramdown
 port: 5000
 
