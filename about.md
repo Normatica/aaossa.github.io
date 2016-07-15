@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Acerca de mí
-permalink: /acerca-de-mi/
+permalink: /about/
 
 custom_css: about
 ---
@@ -16,10 +16,10 @@ Durante mi paso por la universidad he participado en distintas actividades de in
 
 * **MAT1630 Cálculo III** Laboratorio (2015-1)
 * **IIC1103 Introducción a la Programación** Laboratorio, corrección y cátedra (2014 y 2015-1)
-* **IIC2233 Programación Avanzada** Corrección y cátedra (2015 y 2016-1)
+* **IIC2233 Programación Avanzada** Corrección y cátedra (2015 y 2016)
 
-También, durante el primer semestre de 2016, seré **Jefe del área de Docencia en Programación Avanzada**.
+También, durante el año 2016, he ocupado el cargo de **Jefe del área de Docencia en Programación Avanzada**.
 
 <br>
 
-Para contactarme puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl). Otras formas de contacto están disponibles en [esta sección de la página](/contacto/).
+Para contactarme puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl). Otras formas de contacto están disponibles en [esta sección de la página](/contact/).
