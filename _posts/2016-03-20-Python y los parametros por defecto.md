@@ -9,11 +9,11 @@ Es posible que al usar funciones con parámetros por defecto se encuentren con c
 
 Veamos el comportamiento de los parámetros por defecto en funciones:
 
-{% highlight python %}
+```python
 def funcion(lista=[]):
     lista.append(1)
     print("La lista vale: {}".format(lista))
-{% endhighlight %}
+```
 
 Si llamamos a la función una vez...
 
