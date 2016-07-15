@@ -1,18 +1,32 @@
-# Welcome to Jekyll!
-
-# Site settings
+# Main settings
 title: Antonio Ossa
 email: aaossa@uc.cl
-description: > # this means to ignore newlines until next setting
-  Página web personal de Antonio Ossa Guerra
-username: aaossa
+description: Página web personal de Antonio Ossa Guerra
+
+# Author
+author: Antonio Ossa
+author_email: aaossa@uc.cl
+avatar: https://avatars3.githubusercontent.com/u/10425834
+author_codepen: http://codepen.io/aaossa
+author_facebook: https://www.facebook.com/aaossa
+author_github: https://github.com/aaossa
+author_linkedin: https://www.linkedin.com/in/aaossa
+author_telegram: https://telegram.me/aaossa
+author_twitter: aaossa
 
 # Build settings
 highlighter: rouge
 markdown: kramdown
-port: 5000
+sass:
+  style: :compressed
 
-# More settings
+# Extra settings
 encoding: utf-8
 permalink: /blog/:title
 timezone: America/Santiago
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
