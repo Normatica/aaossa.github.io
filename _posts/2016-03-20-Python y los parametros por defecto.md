@@ -17,36 +17,36 @@ def funcion(lista=[]):
 
 Si llamamos a la función una vez...
 
-{% highlight python %}
+```python
 >> funcion()
 La lista vale: [1]
-{% endhighlight %} 
+```
 
 ... todo funciona como lo suponemos, pero y si probamos otra vez...
 
-{% highlight python %}
+```python
 >> funcion()
 La lista vale: [1, 1]
 >> funcion()
 La lista vale: [1, 1, 1]
-{% endhighlight %}
+```
 
 ... ok? No funciona como lo supondríamos.
 
 Esto también podemos extenderlo a clases, donde es común usar parámetros por defecto:
 
-{% highlight python %}
+```python
 class Clase:
 
     def __init__(self, lista=[]):
         self.lista = lista
         self.lista.append(1)
         print("Lista de la clase: {}".format(self.lista))
-{% endhighlight %}
+```
 
 Vamos al código: 
 
-{% highlight python %}
+```python
 # Instanciamos dos objetos
 >> A = Clase()
 Lista de la clase: [1]
@@ -61,13 +61,13 @@ Lista de la clase: [1, 1]
 [1, 1, 5]
 >> print(B.lista)
 [1, 1, 5]
-{% endhighlight %}
+```
 
 # Investigando nuestro código
 
 Veamos un poco qué está pasando en nuestro código:
 
-{% highlight python %}
+```python
 # Instanciemos algunos objetos
 >> A = Clase()
 Lista de la clase: [1, 1, 5, 1]
@@ -91,18 +91,18 @@ Lista de la clase: ['GG', 1]
 72545608 
 >> id(C.lista)
 68790472
-{% endhighlight %}
+```
 
 # ¿Qué está pasando? D:
 
 En Python, las funciones son objetos del tipo `callable`, es decir, que son "llamables", ejecutan una operación.
 
-{% highlight python %}
+```python
 # De hecho, tienen atributos...
 def funcion(lista=[]):
     lista.append(5)
-{% endhighlight %}
-{% highlight python %}
+```
+```python
 # En la funcion "funcion"...
 >> funcion.__defaults__
 ([],)
@@ -117,7 +117,7 @@ def funcion(lista=[]):
 # Si vemos como quedo el metodo "__init__" de la clase Clase...
 >> Clase.__init__.__defaults__
 ([1, 1, 5, 1, 1],)
-{% endhighlight %}
+```
 
 El código que define a función es evaluado **una vez** y dicho valor evaluado es el que se usa en cada llamado posterior. Por lo tanto, **al modificar el valor de un parámetro por defecto que es mutable** (`list`, `dict`, etc.) **se modifica el valor por defecto para el siguiente llamado**.
 
@@ -126,7 +126,7 @@ El código que define a función es evaluado **una vez** y dicho valor evaluado 
 Una solución simple es **usar `None`** como el valor predeterminado para los parámetros por defecto. Otra solución es la declaración de variables condicionales:
 
 
-{% highlight python %}
+```python
 class Clase:
     
     def __init__(self, lista=None):
@@ -138,7 +138,7 @@ class Clase:
             self.lista = lista
         else:
             self.lista = list()
-{% endhighlight %}
+```
 
 **Importante:** Esto no es un bug/error/magia negra... Es Python. En Python *todo es un objeto*, incluso las funciones...
 
