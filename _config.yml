@@ -5,14 +5,14 @@ description: Página web personal de Antonio Ossa Guerra
 
 # Author
 author: Antonio Ossa
-author_email: aaossa@uc.cl
-avatar: https://avatars3.githubusercontent.com/u/10425834
 author_codepen: http://codepen.io/aaossa
+author_email: aaossa@uc.cl
 author_facebook: https://www.facebook.com/aaossa
 author_github: https://github.com/aaossa
 author_linkedin: https://www.linkedin.com/in/aaossa
 author_telegram: https://telegram.me/aaossa
-author_twitter: aaossa
+author_twitter: https://twitter.com/aaossa
+avatar: https://avatars3.githubusercontent.com/u/10425834
 
 # Build settings
 highlighter: rouge
