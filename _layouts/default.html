@@ -14,10 +14,9 @@
     </div>
 
     {% include footer.html %}
-
+    {% if page.mathjax %}
+    {% include mathjax.html %}
+    {% endif %}
   </body>
-
-  {% include mathjax.html %}
-  {% include google_analytics.html %}
 
 </html>
