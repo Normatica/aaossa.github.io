@@ -15,14 +15,11 @@ author_twitter: https://twitter.com/aaossa
 avatar: https://avatars3.githubusercontent.com/u/10425834
 
 # Build settings
-highlighter: rouge
 markdown: kramdown
 kramdown:
   auto_ids: true
   input: GFM
-  use_coderay: true
-  coderay:
-    coderay_line_numbers: nil
+  highlighter: rouge
 sass:
   style: :compressed
 
