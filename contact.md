@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: contact
 title: Contacto
-permalink: /contacto/
+permalink: /contact/
 ---
 
 # Vías de comunicación
