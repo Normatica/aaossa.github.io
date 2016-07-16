@@ -1,7 +1,8 @@
 ---
 layout: contact
-title: Contacto
-permalink: /contact/
+title: Contact
+permalink: /en/contact/
+lang: en
 ---
 
 # Vías de comunicación

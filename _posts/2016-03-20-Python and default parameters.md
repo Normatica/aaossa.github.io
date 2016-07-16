@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  'Python y los parámetros por defecto'
+title:  'Python and default parameters'
 date:   2016-03-20
-lang: es
+lang: en
 ref: Python y los parámetros por defecto
 categories: python
 ---

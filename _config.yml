@@ -23,6 +23,7 @@ sass:
 # Extra settings
 encoding: utf-8
 permalink: /blog/:title
+lang: es
 timezone: America/Santiago
 exclude:
   - .gitignore

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Acerca de mí
-permalink: /about/
+permalink: /es/about/
+lang: es
 
 custom_css: about
 ---

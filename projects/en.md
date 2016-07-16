@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Proyectos
-permalink: /projects/
+title: Projects
+permalink: /en/projects/
+lang: en
 ---
 
 Estas son áreas que actualmente son de mi interés y que estoy estudiando:

@@ -5,7 +5,7 @@
 
   <body>
 
-    {% include header.html %}
+    {% include header.html %}    
 
     <div class="page-content">
       <div class="wrapper wrapper-content">
@@ -14,9 +14,7 @@
     </div>
 
     {% include footer.html %}
-    {% if page.mathjax %}
-    {% include mathjax.html %}
-    {% endif %}
+    {% if page.mathjax %}{% include mathjax.html %}{% endif %}
   </body>
 
 </html>
