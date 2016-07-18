@@ -3,6 +3,7 @@ layout: page
 title: About me
 permalink: /en/about/
 lang: en
+ref: about
 
 custom_css: about
 ---

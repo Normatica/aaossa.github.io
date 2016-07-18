@@ -3,6 +3,7 @@ layout: page
 title: Proyectos
 permalink: /es/projects/
 lang: es
+ref: projects
 ---
 
 Estas son áreas que actualmente son de mi interés y que estoy estudiando:

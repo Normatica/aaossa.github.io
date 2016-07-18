@@ -3,6 +3,7 @@ layout: contact
 title: Contacto
 permalink: /es/contact/
 lang: es
+ref: contact
 ---
 
 # Vías de comunicación

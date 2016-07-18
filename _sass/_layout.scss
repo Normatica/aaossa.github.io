@@ -42,6 +42,15 @@
       }
   }
 
+  .toggle {
+    background-color: $text-color;
+    color: $background-color;
+    line-height: $base-line-height;
+    padding: 17px;
+    margin: -17px;
+    padding-bottom: 18px;
+  }
+
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
