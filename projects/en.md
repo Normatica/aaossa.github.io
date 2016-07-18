@@ -6,12 +6,12 @@ lang: en
 ref: projects
 ---
 
-Estas son áreas que actualmente son de mi interés y que estoy estudiando:
+These are the areas that are currently of my interest:
 
-##### Actualización en progreso
+##### Must update
 
 <br>
 
-Estos son algunos de los proyectos en los que actualmente me encuentro trabajando:
+These are some of the things I've done:
 
-##### Actualización en progreso
+##### Must update
