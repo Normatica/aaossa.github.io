@@ -6,7 +6,7 @@ lang: en
 ref: contact
 ---
 
-# Vías de comunicación
+# Social
 
 <ul class="social-icons">
 	<li><a href="https://telegram.me/aaossa"><i class="fa fa-paper-plane-o fa-fw"></i><strong>&nbsp; Telegram</strong></a></li>
@@ -16,7 +16,7 @@ ref: contact
 
 <br>
 
-# Links importantes
+# Important
 
 <ul class="social-icons">
   <li><a href="https://github.com/aaossa"><i class="fa fa-github fa-fw"></i><strong>&nbsp; GitHub</strong></a></li>
