@@ -6,11 +6,9 @@
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
-
   // Positioning context for the mobile navigation icon
   position: relative;
 }
-
 .site-title {
   font-size: 26px;
   line-height: 56px;
@@ -18,86 +16,41 @@
   margin-bottom: 0;
   float: left;
 
-  &,
-  &:visited {
+  &, &:visited {
     color: $grey-color-dark;
   }
 }
-
-.site-nav {
-  float: right;
+.header-sites {
   line-height: 56px;
+  margin-bottom: 0;
+  float: right;
 
-  .menu-icon {
-    display: none;
-  }
+  ul {
+    display: block;
+    list-style-type: none;
 
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-        margin-right: 20px;
-      }
-  }
-
-  .toggle {
-    background-color: $text-color;
-    color: $background-color;
-    line-height: $base-line-height;
-    padding: 17px;
-    margin: -17px;
-    padding-bottom: 18px;
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
+    li {
       display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
+      float: left;
 
-      > svg {
-        width: 18px;
-        height: 15px;
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+      }
+      .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
 
-        path {
-          fill: $grey-color-dark;
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+          margin-right: 20px;
         }
       }
     }
-
-    .trigger {
-      clear: both;
-      display: none;
-    }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-
-      margin-left: 20px;
+    .toggle {
+      background-color: $text-color;
+      color: $background-color;
     }
   }
 }
@@ -108,7 +61,6 @@
 .site-footer {
   padding: $spacing-unit 0;
 }
-
 .site-footer:before {
   background-color: #555;
   content: "";
@@ -127,11 +79,9 @@
 .page-content {
   padding-top: $spacing-unit;
 }
-
 .page-heading {
   font-size: 20px;
 }
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -140,12 +90,10 @@
     margin-bottom: $spacing-unit;
   }
 }
-
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
 }
-
 .post-link {
   display: block;
   font-size: 24px;
@@ -157,7 +105,6 @@
 .post-header {
   margin-bottom: $spacing-unit;
 }
-
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
@@ -167,7 +114,6 @@
     font-size: 36px;
   }
 }
-
 .post-content {
   margin-bottom: 0;
 
@@ -178,7 +124,6 @@
       font-size: 28px;
     }
   }
-
   h3 {
     font-size: 26px;
 
@@ -186,7 +131,6 @@
       font-size: 22px;
     }
   }
-
   h4 {
     font-size: 20px;
 
