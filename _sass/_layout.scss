@@ -6,98 +6,97 @@
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
-
-  // Positioning context for the mobile navigation icon
   position: relative;
 }
-
+.site-nav {
+  widows: 100%;
+  padding: 0;
+}
 .site-title {
-  font-size: 26px;
-  line-height: 56px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
+  display: block;
   float: left;
+  font-size: 26px;
+  letter-spacing: -1px;
+  line-height: 56px;  
+  margin-bottom: 0;
+  padding: 0 15px;
+  
 
-  &,
-  &:visited {
+  &, &:visited {
     color: $grey-color-dark;
   }
 }
-
-.site-nav {
-  float: right;
+.header-sites {
   line-height: 56px;
+  margin-bottom: 0;
+  float: right;
 
-  .menu-icon {
-    display: none;
-  }
+  ul {
+    display: block;
+    list-style-type: none;
 
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-        margin-right: 20px;
-      }
-  }
-
-  .toggle {
-    background-color: $text-color;
-    color: $background-color;
-    line-height: $base-line-height;
-    padding: 17px;
-    margin: -17px;
-    padding-bottom: 18px;
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
+    li {
       display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
+      float: left;
+      padding: 0;
 
-      > svg {
-        width: 18px;
-        height: 15px;
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 1em 10px;
+      }
+      .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
 
-        path {
-          fill: $grey-color-dark;
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+          margin-right: 20px;
         }
       }
     }
-
-    .trigger {
-      clear: both;
-      display: none;
+    .toggle {
+      background-color: $text-color;
+      color: $background-color;
     }
+  }
+}
+.site-header {
+  @include media-query($on-palm) {
+    nav {    
+      .header-title {
+        text-align: center;
 
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
+        .site-title {
+          float: none;
+        }
       }
+      .header-sites:before {
+        content: "\039e";
+      }
+      .header-sites:hover ul {
+        display: block;
+        margin-bottom: 0;
+      }
+      .header-sites {
+        float: none;
+        text-align: center;
 
-      margin-left: 20px;
+        ul {
+          display: none;
+          margin-left: 0px;
+
+          li {
+            float: none;
+            text-align: center;            
+
+            a {
+              display: block;
+              padding: 1em;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -108,7 +107,6 @@
 .site-footer {
   padding: $spacing-unit 0;
 }
-
 .site-footer:before {
   background-color: #555;
   content: "";
@@ -127,11 +125,9 @@
 .page-content {
   padding-top: $spacing-unit;
 }
-
 .page-heading {
   font-size: 20px;
 }
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -140,12 +136,10 @@
     margin-bottom: $spacing-unit;
   }
 }
-
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
 }
-
 .post-link {
   display: block;
   font-size: 24px;
@@ -157,7 +151,6 @@
 .post-header {
   margin-bottom: $spacing-unit;
 }
-
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
@@ -167,7 +160,6 @@
     font-size: 36px;
   }
 }
-
 .post-content {
   margin-bottom: 0;
 
@@ -178,7 +170,6 @@
       font-size: 28px;
     }
   }
-
   h3 {
     font-size: 26px;
 
@@ -186,7 +177,6 @@
       font-size: 22px;
     }
   }
-
   h4 {
     font-size: 20px;
 
