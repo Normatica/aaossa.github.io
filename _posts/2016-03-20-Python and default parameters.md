@@ -7,78 +7,76 @@ ref: Python y los parámetros por defecto
 categories: python
 ---
 
-Es posible que al usar funciones con parámetros por defecto se encuentren con cierto comportamiento inesperado o poco intuitivo de Python. Por estas cosas siempre hay que revisar el código, conocerlo lo mejor posible y saber responder cuando las cosas no funcionan como uno espera.
+When working with functions with default parameters is possible that you find an unexpected or "non-intuitive" behavior in Python. This is one of the reasons to always review and be familiar with your code, to know what to do when things work different than expected.
 
-Veamos el comportamiento de los parámetros por defecto en funciones:
+Let's write some code:
 
 ```python
-def funcion(lista=[]):
-    lista.append(1)
-    print("La lista vale: {}".format(lista))
+def function(a_list=[]):
+    a_list.append(1)
+    print("My list is: {}".format(a_list))
 ```
 
-Si llamamos a la función una vez...
+If we call this function once...
 
 ```python
->> funcion()
-La lista vale: [1]
+>> function()
+My list is: [1]
 ```
 
-... todo funciona como lo suponemos, pero y si probamos otra vez...
+... everything works as expected, but if we call `function` again...
 
 ```python
->> funcion()
-La lista vale: [1, 1]
->> funcion()
-La lista vale: [1, 1, 1]
+>> function()
+My list is: [1, 1]
+>> function()
+My list is: [1, 1, 1]
 ```
 
-... ok? No funciona como lo supondríamos.
+... ok? This is not how any of this should work.
 
-Esto también podemos extenderlo a clases, donde es común usar parámetros por defecto:
+We could also extend this to classes, where default parameters are commonly used:
 
 ```python
-class Clase:
+class MyClass:
 
-    def __init__(self, lista=[]):
-        self.lista = lista
-        self.lista.append(1)
-        print("Lista de la clase: {}".format(self.lista))
+    def __init__(self, a_list=[]):
+        self.my_list = a_list
+        self.my_list.append(1)
+        print("Intance list: {}".format(self.my_list))
 ```
 
-Vamos al código: 
+Now, we are going to use this class and see what happens: 
 
 ```python
-# Instanciamos dos objetos
->> A = Clase()
-Lista de la clase: [1]
->> B = Clase()
-Lista de la clase: [1, 1]
+# Create two instances
+>> A = MyClass()
+Intance list: [1]
+>> B = MyClass()
+Intance list: [1, 1]
 
-# Modificamos el parametro en una de las instancias
->> A.lista.append(5)
+# Modify my_list in one of the instances
+>> A.my_list.append(5)
 
 # What??
->> print(A.lista)
+>> print(A.my_list)
 [1, 1, 5]
->> print(B.lista)
+>> print(B.my_list)
 [1, 1, 5]
 ```
 
-# Investigando nuestro código
-
-Veamos un poco qué está pasando en nuestro código:
+# Reviewing our code
 
 ```python
-# Instanciemos algunos objetos
->> A = Clase()
-Lista de la clase: [1, 1, 5, 1]
->> B = Clase()
-Lista de la clase: [1, 1, 5, 1, 1]
->> C = Clase(lista=["GG"]) # Usaremos esta instancia como control
-Lista de la clase: ['GG', 1]
+# Create some instances
+>> A = MyClass()
+Intance list: [1, 1, 5, 1]
+>> B = MyClass()
+Intance list: [1, 1, 5, 1, 1]
+>> C = MyClass(lista=["GG"]) # A "control instance"
+Intance list: ['GG', 1]
 
-# Los objetos son distintos!
+# Our instances are not the same ...
 >> id(A)
 72497248 
 >> id(B)
@@ -86,65 +84,65 @@ Lista de la clase: ['GG', 1]
 >> id(C)
 68790472
 
-# Pero la lista es la misma para A y para B :O
->> id(A.lista)
+# But the list is shared! :O
+>> id(A.my_list)
 72545608 
->> id(B.lista)
+>> id(B.my_list)
 72545608 
->> id(C.lista)
+>> id(C.my_list)
 68790472
 ```
 
-# ¿Qué está pasando? D:
+# What's going on? D:
 
-En Python, las funciones son objetos del tipo `callable`, es decir, que son "llamables", ejecutan una operación.
+In Python, functions are objects of type `callable` and, when called, execute an operation
 
 ```python
-# De hecho, tienen atributos...
-def funcion(lista=[]):
-    lista.append(5)
+# Also, have attributes...
+def function(a_list=[]):
+    a_list.append(5)
 ```
 ```python
-# En la funcion "funcion"...
->> funcion.__defaults__
+# In the function named `function`...
+>> function.__defaults__
 ([],)
 
-# ... si la invocamos...
->> funcion()
+# ... if we invoke it...
+>> function()
 
-# ahora tenemos...
->> funcion.__defaults__
+# now we have...
+>> function.__defaults__
 ([5],)
 
-# Si vemos como quedo el metodo "__init__" de la clase Clase...
->> Clase.__init__.__defaults__
+# So, what happened in `MyClass.__init__`?...
+>> MyClass.__init__.__defaults__
 ([1, 1, 5, 1, 1],)
 ```
 
-El código que define a función es evaluado **una vez** y dicho valor evaluado es el que se usa en cada llamado posterior. Por lo tanto, **al modificar el valor de un parámetro por defecto que es mutable** (`list`, `dict`, etc.) **se modifica el valor por defecto para el siguiente llamado**.
+The code that defines a function is evaluated **once** and such value is the one used in every call. So, **modify the value of a mutable default parameter** (`list`, `dict`, ...)**, modifies the value for every later call**
 
-# ¿Cómo evitar esto? 
+# How to avoid this? 
 
-Una solución simple es **usar `None`** como el valor predeterminado para los parámetros por defecto. Otra solución es la declaración de variables condicionales:
+A simple solution is **use `None` as default value** for default parameters. Also, you could use a conditional variable declaration:
 
 
 ```python
-class Clase:
+class MyClass:
     
-    def __init__(self, lista=None):
-        # Version "one-liner":
-        self.lista = lista if lista is not None else list()
+    def __init__(self, a_list=None):
+        # One-liner
+        self.my_list = a_list if a_list is not None else list()
         
-        # En su version extendida:
-        if lista is not None:
-            self.lista = lista
+        # Extended
+        if a_list is not None:
+            self.my_list = a_list
         else:
-            self.lista = list()
+            self.my_list = list()
 ```
 
-**Importante:** Esto no es un bug/error/magia negra... Es Python. En Python *todo es un objeto*, incluso las funciones...
+**Important:** This is not a bug/error/black magic/whatever... Is Python. Always remember that, in Python, **everything is an object**, even functions.
 
-### Recursos sobre el tema:
+### More resources about this:
 
 * StackOverflow - “Least Astonishment” in Python: The Mutable Default Argument [[link]](http://stackoverflow.com/questions/1132941/least-astonishment-in-python-the-mutable-default-argument)
 * Effbot.org - Default Parameter Values in Python [[link]](http://effbot.org/zone/default-values.htm)
