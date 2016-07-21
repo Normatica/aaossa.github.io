@@ -22,4 +22,4 @@ I've partipated in a couple of investigations, with **computer engineering and o
 
 <br>
 
-You cand send me an email to [aaossa@uc.cl](mailto:aaossa@uc.cl). Other contact possibilities? Check [this section](/contact/).
+You cand send me an email to [aaossa@uc.cl](mailto:aaossa@uc.cl). Other contact possibilities? Check [this section](/en/contact/).

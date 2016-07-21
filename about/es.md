@@ -24,4 +24,4 @@ También, durante el año 2016, he ocupado el cargo de **Jefe del área de Docen
 
 <br>
 
-Para contactarme puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl). Otras formas de contacto están disponibles en [esta sección de la página](/contact/).
+Para contactarme puedes enviarme un mail a [aaossa@uc.cl](mailto:aaossa@uc.cl). Otras formas de contacto están disponibles en [esta sección de la página](/es/contact/).
