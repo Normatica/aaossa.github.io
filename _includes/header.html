@@ -1,20 +1,16 @@
-<header class="site-header" role="banner">
-    <nav class="site-nav wrapper">
-        {% if page.lang == "en" %}{% assign baseurl="/en" %}{% assign other="Español" %}
-        {% elsif page.lang == "es" %}{% assign baseurl="/" %}{% assign other="English" %}{% endif %}
-        <div class="header-title">
-            <a class="site-title" href="{{ baseurl }}">{{ site.title }}</a>
-        </div>
-
-        {% assign pages=site.pages | where:"lang", page.lang %}
-        <div class="header-sites">            
-            <ul>{% for p in pages %}{% if p.title %}
-                <li><a class="page-link" href="{{ p.url }}">{{ p.title }}</a></li>{% endif %}{% endfor %}
-                {% assign posts=site.posts | where:"ref", page.ref %}{% for p in posts %}{% if p.lang != page.lang %}
-                <li class="toggle"><a href="{{ p.url }}" class="toggle">{{ other }}</a></li>{% endif %}{% endfor %}
-                {% assign pages=site.pages | where:"ref", page.ref %}{% for p in pages %}{% if p.lang != page.lang %}
-                <li class="toggle"><a href="{{ p.url }}" class="toggle">{{ other }}</a></li>{% endif %}{% endfor %}
-            </ul>
-        </div>
+<header>
+    {% if page.lang == "en" %}{% assign baseurl="/en" %}{% assign other="Español" %}
+    {% elsif page.lang == "es" %}{% assign baseurl="/" %}{% assign other="English" %}{% endif %}
+    <h1><a href="{{ baseurl }}">{{ site.title }}</a></h1>
+    <nav>        
+        <ul>
+            <!-- Pages -->{% assign pages=site.pages | where:"lang", page.lang %}{% for p in pages %}{% if p.title %}
+            <li><a href="{{ p.url }}">{{ p.title }}</a></li>{% endif %}{% endfor %}
+            <!-- Post translation -->{% assign posts=site.posts | where:"ref", page.ref %}{% for p in posts %}{% if p.lang != page.lang %}
+            <li><a href="{{ p.url }}">{{ other }}</a></li>{% endif %}{% endfor %}
+            <!-- Page translation -->{% assign pages=site.pages | where:"ref", page.ref %}{% for p in pages %}{% if p.lang != page.lang %}
+            <li><a href="{{ p.url }}">{{ other }}</a></li>{% endif %}{% endfor %}
+        </ul>
     </nav>
+
 </header>

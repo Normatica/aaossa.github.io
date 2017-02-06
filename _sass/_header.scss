@@ -1,0 +1,48 @@
+header h1 {
+    display:inline-block;
+    position:relative;
+    text-align: center;
+    width: 100%;
+}
+header a {
+    color: black;
+    font-family: 'Helvetica Neue', sans-serif;    
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+header h1 a {
+    font-size: 45px;
+}
+
+header h1 a:hover {
+    color: darkgray;
+}
+
+header nav {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+header nav ul {    
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 15px;
+    text-align: center;
+    width: -webkit-fit-content;
+       width: -moz-fit-content;
+            width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin:  0 auto;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+    display:  block;
+    width: 100px;
+}
