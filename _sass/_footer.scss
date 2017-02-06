@@ -1,0 +1,37 @@
+footer {
+    border-top: 1px solid black;
+    font-family: 'Helvetica Neue', sans-serif;
+    width: 100%;
+
+    a {
+        color: #2a7ae2;
+        text-decoration: none;
+    }
+    ul {
+        margin: 0 auto;
+        list-style-type: none;
+        padding: 0;
+        padding-top: 15px;
+        text-align: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+
+        li {
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    }
+    .footer-social {
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                font-size: 30px;
+                width: 60px;
+                // Porque en header son 100 y aqui abajo tenemos padding 20, son dos lados y tenemos 2*20 = 40 entonces uso 60
+            }
+        }
+    }
+}
