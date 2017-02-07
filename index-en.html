@@ -5,13 +5,17 @@ permalink: /en/
 ref: index
 ---
 {% assign posts=site.posts | where:"lang", page.lang %}
-<div class="home">
-    <ul class="post-list">    
-	{% for post in posts %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        </li>
-    {% endfor %}
-    </ul>
-</div>
+{% for post in posts %}
+<article>
+	<header class="article-header">
+		<h2><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+		<p>{{ post.date | date: "%b %-d, %Y" }}</p>
+	</header>
+	<section class="article-desc">
+	    {% if post.description %}{% assign show=post.description %}
+	    {% else %}{% assign show=post.content | strip_html | truncate: 140 %}{% endif %}
+		<p>{{ show }}</p>
+		<p><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Ver más</a></p>
+	</section>
+</article>
+{% endfor %}

@@ -1,10 +1,12 @@
 footer {
-    border-top: 1px solid black;
-    font-family: 'Helvetica Neue', sans-serif;
+    background-color: $footer-background-color;
+    color: $footer-color;
+    border-top: 1px solid $footer-border-color;
+    font-family: $footer-font-family;
     width: 100%;
 
     a {
-        color: #2a7ae2;
+        color: $footer-anchor-color;
         text-decoration: none;
     }
     ul {
@@ -28,9 +30,10 @@ footer {
 
             a {
                 display: block;
-                font-size: 30px;
+                font-size: $footer-social-font-size;
                 width: 60px;
-                // Porque en header son 100 y aqui abajo tenemos padding 20, son dos lados y tenemos 2*20 = 40 entonces uso 60
+                /* "width: 60 px" porque en header son 100px y aqui tenemos "padding:20px" y, 
+                como son dos lados, tenemos 2*20px = 40px, y 100px-40px=60px */
             }
         }
     }

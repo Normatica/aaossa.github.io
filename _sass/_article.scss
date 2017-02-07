@@ -1,0 +1,31 @@
+main {
+	font-family: $main-font-family;
+	margin: 0 auto;
+	max-width: $main-max-width;
+}
+article {
+	font-family: $article-font-family;
+	margin: 50px auto;
+
+	.article-header {
+		background-color: $article-header-background-color;
+		color: $article-header-color;
+
+		a {
+			color: $article-header-color;
+		}
+		h2 {
+			margin: 0 10px;
+		}
+		p {
+			margin: 0 10px;
+			text-align: right;
+		}
+	}
+	.article-desc p:last-child a {
+		background-color: $article-desc-more-background-color;
+		color: $article-desc-more-color;
+		padding: 10px;
+		text-decoration: none;
+	}
+}

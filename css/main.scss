@@ -3,28 +3,66 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-font-weight: 400;
-$base-line-height: 1.5;
+// Color set
+$black: #000000;
+$ink: #062f4f;
+$posy: #813772;
+$embers: #b82601;
+//
+$prussianblue: #0b3c5d;
+$skyblue: #328cc1;
+$goldleaf: #d9b310;
+$ivoryblack: #1d2731;
+//
+$aqua: #6bbaa7;
+$sunshine: #fba100;
+$lavender: #6c648b;
+$dustyrose: #b6a19e;
+//
+$stormy: #494e6b;
+$cloud: #98878f;
+$sunset: #985e6d;
+$evening: #192231;
+//
+$coral: #e14658;
+$navy: #22252c;
+$mountain: #3f3250;
+$scrub: #c0b3a0;
 
-$spacing-unit:     30px;
+// Body (color)
+$body-background-color: none;
+$body-color: $navy;
 
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-$text-color:       #555;
+// Header (text)
+$header-h1-font-size: 45px;
+$header-font-family: 'Helvetica Neue', sans-serif;
+// Header (color)
+$header-background-color: $navy;
+$header-border-color: $scrub;
+$header-color: white;
+$header-hover-color: $coral;
 
-$grey-color:       #555;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Footer (text)
+$footer-font-family: $header-font-family;
+$footer-social-font-size: 30px;
+// Footer (color)
+$footer-anchor-color: $coral;
+$footer-background-color: $header-background-color;
+$footer-border-color: $header-border-color;
+$footer-color: $header-color;
 
-// Width of the content area
-$content-width:    800px;
+// Main (size):
+$main-max-width: 600px;
+// Main (text)
+$main-font-family: 'Roboto', sans-serif;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// Article (text)
+$article-font-family: $main-font-family;
+// Article (color)
+$article-header-background-color: white;
+$article-header-color: $navy;
+$article-desc-more-background-color: $coral;
+$article-desc-more-color: white;
 
 
 // Use media queries like this:
@@ -43,6 +81,8 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         // "base",
+        "article",
+        "body",
         "header",
         "footer"
         // "layout",
