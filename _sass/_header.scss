@@ -1,5 +1,6 @@
 header {
     background-color: $header-background-color;
+    background-image: inherit;
     border-bottom: 1px solid $header-border-color;
     color: $header-color;
     font-family: $header-font-family;
