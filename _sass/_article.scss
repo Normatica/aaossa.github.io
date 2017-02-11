@@ -7,14 +7,17 @@ article {
 	font-family: $article-font-family;
 	margin: 50px auto;
 
-	.article-header {
+	.page-header, .article-header {
 		background-color: inherit;
 		color: $article-header-color;
 
 		a {
 			color: $article-header-color;
 		}
-		h2 {
+		h1 {
+			font-size: 35px;
+		}
+		h1, h2 {
 			margin: 0 10px;
 		}
 		p {
@@ -27,5 +30,16 @@ article {
 		color: $article-desc-more-color;
 		padding: 10px;
 		text-decoration: none;
+	}
+	.article-content {
+		a {
+			color: $article-anchor-color;
+			text-decoration: none;
+		}
+		img {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			display: block;
+			margin: 0 auto;
+		}
 	}
 }
