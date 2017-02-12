@@ -1,22 +1,15 @@
-<footer class="site-footer" role="contentinfo">
-	<div class="wrapper wrapper-footer">
-		<div class="footer-social">
-			<ul class="social-icons">
-				<li><a href="{{ site.author_telegram }}"><i class="fa fa-paper-plane-o fa-fw"></i></a></li>
-				<li><a href="{{ site.author_facebook }}"><i class="fa fa-facebook fa-fw"></i></a></li>
-				<li><a href="mailto:{{ site.author_email }}"><i class="fa fa-envelope-o fa-fw"></i></a></li>
-				<li><a href="{{ site.author_github }}"><i class="fa fa-github fa-fw"></i></a></li>
-				<li><a href="{{ site.author_linkedin }}"><i class="fa fa-linkedin fa-fw"></i></a></li>
-				<li><a href="{{ site.author_codepen }}"><i class="fa fa-codepen fa-fw"></i></a></li>
-			</ul>
-		</div>
-		{% if page.lang == "en" %}{% assign description=site.description_en %}
-        {% elsif page.lang == "es" %}{% assign description=site.description %}{% endif %}
-		<div class="footer-bottom">
-			<ul class="footer-list">
-				<li><p>{{ description }}</p></li>
-				<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-			</ul>
-		</div>
-	</div>
+<footer>
+    <ul class="footer-social">
+        <li><a title="GitHub" href="{{ site.author_github }}" class="fa fa-github fa-fw" aria-label="GitHub: aaossa"> </a></li>
+        <li><a title="Facebook" href="{{ site.author_facebook }}" class="fa fa-facebook fa-fw" aria-label="Facebook: Antonio Ossa"> </a></li>
+        <li><a title="LinkedIn" href="{{ site.author_linkedin }}" class="fa fa-linkedin fa-fw" aria-label="LinkedIn: Antonio Ossa"> </a></li>
+        <li><a title="Twitter" href="{{ site.author_twitter }}" class="fa fa-twitter fa-fw" aria-label="Twitter: aaossa"> </a></li>
+    </ul>
+    {% if page.lang == "en" %}{% assign description=site.description_en %} {% elsif page.lang == "es" %}{% assign description=site.description %}{% endif %}
+    <ul class="footer-description">
+        <li>
+            <p>{{ description }}</p>
+        </li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    </ul>
 </footer>

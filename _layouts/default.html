@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}    
+    {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper wrapper-content">
-        {{ content }}
-      </div>
-    </div>
+    <main>{{ content }}</main>
 
-    {% include footer.html %}
-    {% if page.mathjax %}{% include mathjax.html %}{% endif %}
-  </body>
+    {% include footer.html %}    
+
+</body>
 
 </html>

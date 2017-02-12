@@ -3,37 +3,47 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-font-weight: 400;
-$base-line-height: 1.5;
+// Color palette
+$coral: #e14658;
+$navy: #22252c;
+$mountain: #3f3250;
+$scrub: #c0b3a0;
+ 
+// Using the colors
+$body-background-color: none;
+$body-color: $navy;
+$header-background-color: $navy;
+$header-color: white;
+$header-hover-color: $coral;
+$header-border-color: $navy;
+$footer-background-color: $header-background-color;
+$footer-color: $header-color;
+$footer-anchor-color: $coral;
+$footer-border-color: $header-border-color;
+$article-header-background-color: none;
+$article-header-color: $navy;
+$article-desc-more-background-color: $coral;
+$article-desc-more-color: white;
+$article-anchor-color: $coral;
+$syntax-highlighting-background-color: $navy;
+$syntax-highlighting-color: white;
 
-$spacing-unit:     30px;
+// Fonts
+$header-font-family: 'Helvetica Neue', sans-serif;
+$footer-font-family: $header-font-family;
+$main-font-family: 'Roboto', sans-serif;
+$article-font-family: $main-font-family;
 
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-$text-color:       #555;
+// Sizes
+$header-h1-font-size: 45px;
+$footer-social-font-size: 30px;
+$main-max-width: 600px;
 
-$grey-color:       #555;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
+// Media queries helpers
+$on-palm: 600px;
 
 // Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+// @include media-query($on-palm) { }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -42,7 +52,9 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
+        "article",
+        "body",
+        "header",
+        "footer",
         "syntax-highlighting"
 ;

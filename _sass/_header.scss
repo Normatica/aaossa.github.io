@@ -1,0 +1,82 @@
+header {
+    background-color: $header-background-color;
+    background-image: inherit;
+    border-bottom: 1px solid $header-border-color;
+    color: $header-color;
+    font-family: $header-font-family;
+    letter-spacing: -1px;
+    width: 100%;
+
+    a {
+        color: $header-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $header-hover-color;
+        }
+    }
+    h1 {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: 100%;
+
+        a {
+            font-size: $header-h1-font-size;
+        }
+    }
+    nav {
+        ul {
+            margin: 0 auto;
+            list-style-type: none;
+            padding: 0;
+            padding-bottom: 15px;
+            text-align: center;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+
+            li {
+                display: inline-block;
+                margin: 0 auto;
+                padding: 0;
+                text-transform: uppercase;
+
+                a {
+                    display: block;
+                    width: 100px;
+                }
+            }
+        }
+        select {
+            background: $header-color;
+            border: 1px solid $header-border-color;
+            border-radius: 15px;
+            display: none;
+            font-size: inherit;
+            overflow: hidden;
+            padding: 5px 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 250px;
+            text-align: center;
+            margin: 10px auto;
+        }
+    }
+    @include media-query($on-palm) {
+        h1 {
+            a {
+                font-size: 28px;
+            }
+            margin: 10px auto;
+        }
+        nav {
+            ul {
+                display: none
+            }
+            select {
+                display: block;
+            }
+        }
+    }
+}

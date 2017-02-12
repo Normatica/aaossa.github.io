@@ -1,0 +1,23 @@
+#personal-photo {
+	border-radius: 200px;
+	width: 200px;
+}
+
+.social-icons {
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+.social-icons li {
+	display: block;
+	margin: 15px 0;
+}
+
+@media (max-width: 600px) {
+	.social-icons {
+		padding: 0;
+	}
+	.social-icons li {
+		margin: 10px;
+	}
+}

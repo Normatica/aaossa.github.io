@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acerca de mí
+title: Sobre mí
 permalink: /es/about/
 lang: es
 ref: about
@@ -8,19 +8,29 @@ ref: about
 custom_css: about
 ---
 
-Hola, mi nombre es **Antonio Ossa Guerra**. Soy alumno de Ingeniería en la Pontificia Universidad Católica de Chile, buscando articular con el título profesional en **Ingeniería Civil de Industrias, con diploma en Ingeniería de Computación**.
+Hola, yo soy **Antonio Ossa Guerra**. Actualmente soy estudiante de **Ingeniería Civil de Industrias, con diploma en Ingeniería de Computación** en la [Pontificia Universidad Católica de Chile](http://www.uc.cl). También estoy pensando en estudiar un magister en algún tema relacionado con Inteligencia Artificial (en paralelo). Esta es parte de mi historia. 
 
-<div class="image-container">
-	<img id="personal-photo" src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460">
-</div>
+<img id="personal-photo" alt="Mi foto de perfil en GitHub" src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460">
 
-Durante mi paso por la universidad he participado en distintas actividades de investigación, junto a profesores del *Departamento de Ingeniería Industrial y Sistemas* y del *Departamento de Ciencia de la Computación*. Además, he sido ayudante de los siguientes ramos:
+Desde mi primer año en la universidad me gustaron mucho **la investigación y la docencia**. He participado en investigaciones con profesores del [*Departamento de Ingeniería Industrial y Sistemas*](http://www.ing.uc.cl/industrial-y-sistemas/) y del [*Departamento de Ciencia de la Computación*](http://www.ing.uc.cl/ciencia-de-la-computacion/). Además, he sido ayudante de 3 ramos, que me enseñaron mucho como alumno, ayudante y persona:
 
-* **MAT1630 Cálculo III** Laboratorio (2015-1)
-* **IIC1103 Introducción a la Programación** Laboratorio, corrección y cátedra (2014 y 2015-1)
-* **IIC2233 Programación Avanzada** Corrección y cátedra (2015 y 2016)
+* **IIC1103 Introducción a la Programación** (2014 y 2015-1):
 
-También, durante el año 2016, he ocupado el cargo de **Jefe del área de Docencia en Programación Avanzada**.
+> Mientras fuí ayudante de este curso me interesé en aprender más sobre Python y sobre nuevos lenguajes. **La programación empezó a ser parte de mi día a día** y hoy me siento bastante cómodo programando en Python.
+
+* **MAT1630 Cálculo III** (2015-1):
+
+> Hice este curso un semestre después que el curso de programación. Dado que ya me sentía cómodo utilizando Python realizaba los gráficos y funciones tridimensionales en este lenguaje (usando librerías como *matplotlib*) para **apoyar mi aprendizaje con una noción geométrica**.
+
+* **IIC2233 Programación Avanzada** (2015 y 2016):
+
+> Durante estos dos años conocí gente (como yo) que sabía mucho sobre diferentes cosas. Unos interesados en el lenguaje Go, otros en el desarrollo de aplicaciones móviles, unos en *Data Mining*... **Este curso y la gente que conocí en este tiempo me llevaron a querer aprender más**. Siendo ayudante conocí GitHub y Hacker News, donde conocí este mundo. También aprendí sobre Machine Learning y Data Mining, y a utilizar Git. Y me gustó lo que aprendí.
+
+### ¿Mis próximas metas?
+
+* Expandir mis conocimientos en **Machine Learning**, específicamente con Redes Neuronales Artificiales (RNAs, o *ANNs*),
+* implementar lo que aprenda en una **librería básica** para consolidar mi aprendizaje,
+* participar en una **investigación** relacionada con esto
 
 <br>
 
