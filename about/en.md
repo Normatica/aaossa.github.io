@@ -10,7 +10,7 @@ custom_css: about
 
 Hi, my name is **Antonio Ossa**. I'm a **Software Engineering student** at [*Pontifical Catholic University of Chile*](http://www.uc.cl/en). I'm also interested AI (Artificial Intelligence) research and pursuing a Master's degree. This is part of my story.
 
-<img id="personal-photo" src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460">
+<img id="personal-photo" alt="My GitHub profile picture" src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460">
 
 Since my first year at university I'm interested in **teaching and research**. I've participated in a couple of research projects with [Operations Research](http://www.ing.uc.cl/industrial-y-sistemas/) and [Computer Science](http://www.ing.uc.cl/ciencia-de-la-computacion/) teachers. Also, I've been a teaching assistant (TA) of 3 courses, where I've learnt to be a better student, TA and person:
 

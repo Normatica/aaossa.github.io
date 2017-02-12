@@ -10,7 +10,7 @@ custom_css: contact
 
 When I have questions, comments or want to say "Thank you" I prefer to say it directly. I hope you do the same! 
 
-<img id="personal-photo" src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460">
+<img id="personal-photo" alt="My GitHub profile picture" src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460">
 
 <ul class="social-icons">
 	<li><a href="{{ site.author_github }}"><i class="fa fa-github fa-fw"></i><strong>&nbsp; GitHub</strong></a><span> I use it on a daily basis. Almost all of my projects are here</span></li>

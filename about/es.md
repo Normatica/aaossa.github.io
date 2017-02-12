@@ -10,7 +10,7 @@ custom_css: about
 
 Hola, yo soy **Antonio Ossa Guerra**. Actualmente soy estudiante de **Ingeniería Civil de Industrias, con diploma en Ingeniería de Computación** en la [Pontificia Universidad Católica de Chile](http://www.uc.cl). También estoy pensando en estudiar un magister en algún tema relacionado con Inteligencia Artificial (en paralelo). Esta es parte de mi historia. 
 
-<img id="personal-photo" src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460">
+<img id="personal-photo" alt="Mi foto de perfil en GitHub" src="https://avatars3.githubusercontent.com/u/10425834?v=3&s=460">
 
 Desde mi primer año en la universidad me gustaron mucho **la investigación y la docencia**. He participado en investigaciones con profesores del [*Departamento de Ingeniería Industrial y Sistemas*](http://www.ing.uc.cl/industrial-y-sistemas/) y del [*Departamento de Ciencia de la Computación*](http://www.ing.uc.cl/ciencia-de-la-computacion/). Además, he sido ayudante de 3 ramos, que me enseñaron mucho como alumno, ayudante y persona:
 
