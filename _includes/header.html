@@ -11,6 +11,16 @@
             <!-- Page translation -->{% assign pages=site.pages | where:"ref", page.ref %}{% for p in pages %}{% if p.lang != page.lang %}
             <li><a href="{{ p.url }}">{{ other }}</a></li>{% endif %}{% endfor %}
         </ul>
+
+        <select class="pages-links" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+            <option value="" selected="selected">{{ page.title }}</option>
+            <!-- Pages -->{% assign pages=site.pages | where:"lang", page.lang %}{% for p in pages %}{% if p.title %}{% if page.url != p.url %}
+            <option value="{{ p.url }}"><strong>{{ p.title }}</strong></a></option>{% endif %}{% endif %}{% endfor %}
+            <!-- Post translation -->{% assign posts=site.posts | where:"ref", page.ref %}{% for p in posts %}{% if p.lang != page.lang %}
+            <option value="{{ p.url }}"><strong>{{ other }}</strong></a></option>{% endif %}{% endfor %}
+            <!-- Page translation -->{% assign pages=site.pages | where:"ref", page.ref %}{% for p in pages %}{% if p.lang != page.lang %}
+            <option value="{{ p.url }}"><strong>{{ other }}</strong></a></option>{% endif %}{% endfor %}
+        </select>
     </nav>
 
 </header>

@@ -48,5 +48,35 @@ header {
                 }
             }
         }
+        select {
+            background: $header-color;
+            border: 1px solid $header-border-color;
+            border-radius: 15px;
+            display: none;
+            font-size: inherit;
+            overflow: hidden;
+            padding: 5px 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 250px;
+            text-align: center;
+            margin: 10px auto;
+        }
+    }
+    @include media-query($on-palm) {
+        h1 {
+            a {
+                font-size: 28px;
+            }
+            margin: 10px auto;
+        }
+        nav {
+            ul {
+                display: none
+            }
+            select {
+                display: block;
+            }
+        }
     }
 }

@@ -13,8 +13,11 @@
 	margin: 15px 0;
 }
 
-/* Responsive
-.social-icons li span {
-	display: none;
+@media (max-width: 600px) {
+	.social-icons {
+		padding: 0;
+	}
+	.social-icons li {
+		margin: 10px;
+	}
 }
-*/

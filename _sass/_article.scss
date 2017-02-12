@@ -2,6 +2,9 @@ main {
 	font-family: $main-font-family;
 	margin: 0 auto;
 	max-width: $main-max-width;
+	@include media-query($on-palm) {
+		padding: 0 15px;
+	}
 }
 article {
 	font-family: $article-font-family;
@@ -41,5 +44,15 @@ article {
 			display: block;
 			margin: 0 auto;
 		}
+	}
+}
+
+@include media-query($on-palm) {
+	article {
+		font-size: 14px;
+		margin: 20px auto;
+	}
+	.page {
+		margin: 0;
 	}
 }

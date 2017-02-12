@@ -3,70 +3,44 @@
 ---
 @charset "utf-8";
 
-// Color set
+// Color palette
 $coral: #e14658;
 $navy: #22252c;
 $mountain: #3f3250;
 $scrub: #c0b3a0;
-
-// Body (color)
+ 
+// Using the colors
 $body-background-color: none;
 $body-color: $navy;
-
-// Header (text)
-$header-h1-font-size: 45px;
-$header-font-family: 'Helvetica Neue', sans-serif;
-// Header (color)
 $header-background-color: $navy;
-$header-border-color: $navy;
 $header-color: white;
 $header-hover-color: $coral;
-
-// Footer (text)
-$footer-font-family: $header-font-family;
-$footer-social-font-size: 30px;
-// Footer (color)
-$footer-anchor-color: $coral;
+$header-border-color: $navy;
 $footer-background-color: $header-background-color;
-$footer-border-color: $header-border-color;
 $footer-color: $header-color;
-
-// Main (size):
-$main-max-width: 600px;
-// Main (text)
-$main-font-family: 'Roboto', sans-serif;
-
-// Article (text)
-$article-font-family: $main-font-family;
-// Article (color)
-$article-header-background-color: white;
+$footer-anchor-color: $coral;
+$footer-border-color: $header-border-color;
+$article-header-background-color: none;
 $article-header-color: $navy;
 $article-desc-more-background-color: $coral;
 $article-desc-more-color: white;
 $article-anchor-color: $coral;
+$syntax-highlighting-background-color: $navy;
+$syntax-highlighting-color: white;
 
-// Syntax Highlighting (https://github.com/voronianski/oceanic-next-color-scheme)
-$sh-background-color: $navy;
-$sh-color: white;
-$sh-error-color: #a61717;
+// Fonts
+$header-font-family: 'Helvetica Neue', sans-serif;
+$footer-font-family: $header-font-family;
+$main-font-family: 'Roboto', sans-serif;
+$article-font-family: $main-font-family;
 
-$oceanic-base-00: #1B2B34;
-$oceanic-base-01: #343D46;
-$oceanic-base-02: #4F5B66;
-$oceanic-base-03: #65737E; // Comments and line no.
-$oceanic-base-04: #A7ADBA;
-$oceanic-base-05: #C0C5CE;
-$oceanic-base-06: #CDD3DE;
-$oceanic-base-07: #D8DEE9;
-$oceanic-base-08: #EC5f67; // Builtins
-$oceanic-base-09: #F99157; // Numbers
-$oceanic-base-0A: #FAC863; // Classes and inits
-$oceanic-base-0B: #99C794; // Strings
-$oceanic-base-0C: #5FB3B3; // Operators and globals
-$oceanic-base-0D: #6699CC; // Functions
-$oceanic-base-0E: #C594C5; // Keywords
-$oceanic-base-0F: #AB7967;
+// Sizes
+$header-h1-font-size: 45px;
+$footer-social-font-size: 30px;
+$main-max-width: 600px;
 
+// Media queries helpers
+$on-palm: 600px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -83,11 +57,9 @@ $oceanic-base-0F: #AB7967;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        // "base",
         "article",
         "body",
         "header",
         "footer",
-        // "layout",
         "syntax-highlighting"
 ;

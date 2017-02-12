@@ -1,13 +1,37 @@
 /**
+ * Syntax highlighting colors
+ */
+$syntax-highlighting-error-color: #a61717;
+// Oceanic Next (https://github.com/voronianski/oceanic-next-color-scheme)
+$oceanic-base-00: #1B2B34;
+$oceanic-base-01: #343D46;
+$oceanic-base-02: #4F5B66;
+$oceanic-base-03: #65737E; // Comments and line no.
+$oceanic-base-04: #A7ADBA;
+$oceanic-base-05: #C0C5CE;
+$oceanic-base-06: #CDD3DE;
+$oceanic-base-07: #D8DEE9;
+$oceanic-base-08: #EC5f67; // Builtins
+$oceanic-base-09: #F99157; // Numbers
+$oceanic-base-0A: #FAC863; // Classes and inits
+$oceanic-base-0B: #99C794; // Strings
+$oceanic-base-0C: #5FB3B3; // Operators and globals
+$oceanic-base-0D: #6699CC; // Functions
+$oceanic-base-0E: #C594C5; // Keywords
+$oceanic-base-0F: #AB7967;
+
+/**
  * Syntax highlighting styles
  */
 .highlight {
-    background: $sh-background-color;
+    background: $syntax-highlighting-background-color;
     border-radius: 10px;
-    color: $sh-color;
+    color: $syntax-highlighting-color;
+    overflow-x:auto;
+    overflow-wrap: normal;
 
     .c     { color: $oceanic-base-03; font-style: italic } // Comment
-    .err   { color: $sh-error-color; background-color: #e3d2d2 } // Error
+    .err   { color: $syntax-highlighting-error-color; background-color: #e3d2d2 } // Error
     .k     { color: $oceanic-base-0E; font-weight: bold } // Keyword
     .kn    { color: $oceanic-base-0E } // Keyword names
     .o     { color: $oceanic-base-0C; font-weight: bold } // Operator
@@ -18,7 +42,7 @@
     .gd    { color: #000; background-color: #fdd } // Generic.Deleted
     .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
     .ge    { font-style: italic } // Generic.Emph
-    .gr    { color: $sh-error-color } // Generic.Error
+    .gr    { color: $syntax-highlighting-error-color } // Generic.Error
     .gh    { color: #999 } // Generic.Heading
     .gi    { color: #000; background-color: #dfd } // Generic.Inserted
     .gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
@@ -26,7 +50,7 @@
     .gp    { color: #555 } // Generic.Prompt
     .gs    { font-weight: bold } // Generic.Strong
     .gu    { color: #aaa } // Generic.Subheading
-    .gt    { color: $sh-error-color } // Generic.Traceback
+    .gt    { color: $syntax-highlighting-error-color } // Generic.Traceback
     .kc    { color: $oceanic-base-0E; font-weight: bold } // Keyword.Constant
     .kd    { color: $oceanic-base-0E; font-weight: bold } // Keyword.Declaration
     .kp    { color: $oceanic-base-0E; font-weight: bold } // Keyword.Pseudo

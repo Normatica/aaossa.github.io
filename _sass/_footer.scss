@@ -32,10 +32,26 @@ footer {
             a {
                 display: block;
                 font-size: $footer-social-font-size;
-                width: 60px;
-                /* "width: 60 px" porque en header son 100px y aqui tenemos "padding:20px" y, 
-                como son dos lados, tenemos 2*20px = 40px, y 100px-40px=60px */
+                width: 60px;                /* "width: 60 px" porque en header son 100px y aqui tenemos "padding:20px" y, 
+                                como son dos lados, tenemos 2*20px = 40px, y 100px-40px=60px */
             }
+        }
+    }
+    @include media-query($on-palm) {
+        .footer-social {
+            display: table;
+            padding: 15px 0;
+            width: 100%;
+            li {
+                display: table-cell;
+                padding: 0;
+                a {
+                    display: block;
+                }
+            }
+        }
+        .footer-description {
+            display: none;
         }
     }
 }
